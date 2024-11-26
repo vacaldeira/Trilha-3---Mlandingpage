@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Manage landing page</title>
+  <!--CSS Externo-->
+  <link rel="stylesheet" href="style.css">
+  
+  
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+    <img src="images/logo.svg" alt="Manage logo" class="=logo">   
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <a href="#pricing">Pricing</a>
+      <a href="#product">Product</a>
+      <a href="#about">About Us</a>
+      <a href="careers">Careers</a>
+      <a href="community">Community</a>
+      <button class="btn" onclick="started()">Get Started</button>
+    </nav>
+  </header>
+
+  <main>
+    <!--Hero section-->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Bring everyone<br>
+        together to build<br> 
+        better products.</h1>
+        <p>Manage makes it simple for software teams<br>
+          to plan day-to-day tasks while keeping the<br>
+          larger team goals in view.</p>
+        <button class="btn" onclick="started()">Get Started</button>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/illustration-intro.svg" alt="illustration of teamwork">
+      </div>
+    </section>
+
+<!--Features section-->
+    <section id="features" class="features">
+      <div class="featuresb1">
+        <h2>What’s different about 
+          Manage?</h2>
+        <p>Manage provides all the functionality your
+          team needs, without the complexity. Our
+          software is tailor-made for modern digital
+          product teams. </p>
+      </div>
+      <div class="feature-list">
+        <article class="feature">
+        <h3><span class="circle">01 </span>Track company-wide progress</h3>
+        <p>See how your day-to-day tasks fit into the wider vision. Go from 
+          tracking progress at the milestone level all the way done to the 
+          smallest of details. Never lose sight of the bigger picture again.</p>
+        </article>
+        <article class="feature">
+        <h3><span class="circle">02 </span>Advanced built-in reports</h3>
+        <p>Set internal delivery estimates and track progress toward company 
+          goals. Our customisable dashboard helps you build out the reports 
+          you need to keep key stakeholders informed.</p>
+        </article>
+        <article class="feature">
+        <h3><span class="circle">03 </span>Everything you need in one place</h3>
+          <p>Stop jumping from one service to another to communicate, store files, 
+            track tasks and share documents. Manage offers an all-in-one team 
+            productivity solution.</p>
+        </article>
+      </div>
+    </section>
+    
+    <!--Testimonials section-->
+    <section id="testimonials" class="testimonials">
+    <h2>What they´ve said</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn prev-btn" aria-label="Previous">&#10094;</button>
+    <div class="carousel">
+      <article class="testimonial" class="card">
+        <img src="images/avatar-anisha.png" alt="Anisha Li">
+        <h3>Anisha Li</h3>
+        <p>“Manage has supercharged our team’s workflow. The ability
+           to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+      </article>
+      <article class="testimonial" class="card">
+        <img src="images/avatar-ali.png" alt="Ali Bravo">
+        <h3>Ali Bravo</h3>
+        <p>“We have been able to cancel so many other subscriptions 
+          since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+      </article>
+      <article class="testimonial" class="card">
+        <img src="images/avatar-richard.png" alt="Richard Watts">
+        <h3>Richard Watts</h3>
+        <p>“Manage allows us to provide structure and process. It keeps 
+          us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
+      </article>
+      <article class="testimonial" class="card">
+        <img src="images/avatar-shanai.png" alt="Shanai Gough">
+        <h3>Shanai Gough</h3>
+        <p>“Their software allows us to track, manage and collaborate on our 
+          projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+      </article>
+      </div>
+      <button class="carousel-btn nest-btn" aria-label="Next">&#10095;</button>
+  </div>
+  <button class="btn"  onclick="started()">Get Started</button>
+</section>
+
+<!--CTA Section-->
+    <section class="cta">
+      <h2> Simplify how your team
+           works today.</h2>
+           <button id="btn-1" onclick="started()">Get Started</button>
+      </section>
+  </main>
+
+  <footer class="fot">
+    <div class="footer-container"> 
+    <div class="footer-section">
+    <img src="images/logo.svg"  alt="Manage logo"  class="footer-logo"> 
+    <div class="footer-content">   
+    <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+    <a href="#"><img src="images/icon-youtube.svg" alt="Youtube"></a>
+    <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+    <a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest"></a>
+    </div>
+    </div>
+
+    <div class="footer-links">
+    <div class="footer-links1">
+        <a href="home">Home</a>
+        <a href="pricing">Pricing</a> 
+        <a href="product">Products</a>
+        <a href="about">About Us</a><br>
+    </div>
+    <div class="footer-links2">
+        <a href="career">Careers</a>
+        <a href="community">Community</a> 
+        <a href="privacy">Privacy Policy</a> 
+    </div>
+    </div>
+    
+      <div class="footer-newsletter">
+      <form class="newsletter-form">
+        <input type="email" placeholder=" Updates in your inbox…" aria-label="Your email">
+        <button class="btn" type="submit">Go</button>
+      </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright 2020. All Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

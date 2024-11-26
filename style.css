@@ -1,0 +1,592 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+
+
+body{
+    background-image:url(images/bg-tablet-pattern.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    font:Be Vietnam Pro;
+    margin: 0;
+    color: hsl(228, 39%, 23%);
+    }
+
+p{
+    color:hsl(227, 12%, 61%);
+    line-height: 1.8;
+    word-spacing: 2px;
+    margin: 0px 80px 0px 80px;
+}
+
+h1, h2, h3{
+    color: hsl(228, 39%, 23%);
+    font-weight: 600;
+    margin: 0px 80px 0px 80px;
+}
+
+/*botão*/
+.btn{
+   background-color:rgb(221, 98, 15);
+   color: aliceblue;
+   border-radius: 25px;
+   height: 45px;
+   width: 120px;
+   border: none;
+   font-size: 14px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+   box-shadow: 10px 10px 10px 5px white;
+   margin: 0px 80px 0px 80px;
+   }
+
+.btn:hover{
+    transform: translate(-3px);
+    background-color: rgb(255, 115, 50);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0px 80px 0px 80px;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    padding-top: 50px;
+}
+
+nav a {
+    color: hsl(228, 39%, 23%);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(221, 98, 15);
+}
+
+.logo {
+    width: 120px;
+}
+
+/*Hero section*/
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.hero-text{
+    flex:1;
+}
+.hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+.hero-image{    
+    max-width: 100vw;
+    height: 500px;
+    margin-right: 80px;
+    
+}
+
+
+/*Features section*/
+
+.features {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0;
+    text-align: left;
+}
+
+.featuresb1{
+    display: flex;
+    flex-direction: column;
+}
+.features h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.features p{
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feature .circle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(221, 98, 15);
+    color: white;
+    font-weight: bold;
+    border-radius: 45%;
+}
+
+/*Testimonials section*/
+
+.testimonials {
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    color: hsl(228, 39%, 23%);
+}
+
+
+.carousel-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card {
+    min-width: 250px;
+    max-width: 300px;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: hsl(228, 39%, 23%);
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: hsl(227, 12%, 61%);
+    line-height: 1.4;
+}
+
+.prev-btn, .next-btn {
+    background-color: rgb(221, 98, 15);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgb(255, 115, 50);
+}
+
+.prev-btn {
+    left: -30px;
+}
+
+.next-btn {
+    right: -30px;
+}
+
+/* CTA Section*/
+
+.cta {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 20px;
+    background-color: rgb(255, 115, 50);
+    color: white;
+    width: 100vw;
+    position: relative;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+#btn-1{
+    background-color: white;
+    color: rgb(255, 115, 50);
+    border-radius: 25px;
+    height: 45px;
+    width: 120px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 2px 1px white;
+    margin: 30px 80px 0px 0px;
+    
+}
+
+.cta,#btn h2{
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
+}
+
+.cta h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Footer */
+
+.fot {
+    background-color: rgb(33, 33, 33); /* Cor de fundo escura */
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100px;
+    text-align: center;
+    }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-content img {
+    margin: 90px 10px 0px 0px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .footer-links1, .footer-links2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+    
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-newsletter {
+    margin-top: 20px;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+       
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    background-color: rgb(255, 115, 50);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: rgb(230, 90, 30);
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 14px;
+  }
+  
+
+/* Tela até 1024px (tablets) */
+@media (max-width: 1024px) {
+    body {
+        margin: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.0rem;
+        line-height: 1.4;
+    }
+
+    .feature-list {
+        gap: 25px;
+    }
+
+    .features h2{
+        font-size: 1.8rem;
+    }
+
+    .carousel-container {
+        max-width: 550px;
+        padding: 0 15px;
+    }
+
+    footer{
+        padding: 30px 15px;
+    }
+}
+
+/* Tela até 768px (celulares grandes) */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .hero{
+        gap:20px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .features h2 {
+        font-size: 1.6rem;
+    }
+
+    .card {
+        min-width: 240px;
+        padding: 15px;
+    }
+
+    .cta h2 {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap:20px;
+      }
+      
+      .navbar.open {
+        flex-direction: column;
+      }
+    
+      .testimonial {
+        display: none; /* Todos escondidos inicialmente */
+      }
+      
+      .testimonial:first-child {
+        display: block; /* Exibe o primeiro como padrão */
+      }
+}
+
+/* Tela até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    .hero{
+        gap:15px;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h1{
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    .hero-text p{
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .feature-list{
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .card {
+        min-width: 200px;
+        padding: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    footer{
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-newsletter input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Mostra o menu hambúrguer em telas menores */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 1.8rem;
+        color: hsl(228, 39%, 23%);
+    }
+    
+    /* Esconde os links de navegação por padrão */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    /* Links visíveis quando o menu está ativo */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Esconde o menu hambúrguer em telas grandes */
+.menu-icon {
+    display: none;
+}
+
+}
+
